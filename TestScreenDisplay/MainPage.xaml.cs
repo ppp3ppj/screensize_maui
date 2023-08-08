@@ -11,8 +11,8 @@ public partial class MainPage : ContentPage
 
     private void ButtonCheckScreen_Clicked(object sender, EventArgs e)
     {
-		lblScreenHeight.Text = $"{App.ScreenHeight}, {App.ScreenHeightDp}, {App.ScreenDensity}";
-		lblScreenWidth.Text = $"{App.ScreenWidth}, {App.ScreenWidth}, {App.ScreenDensity}";
+		lblScreenHeight.Text = $"{App.ScreenHeight}, {App.ScreenHeightDp}, {App.ScreenDensity}, SD: {App.ScaledDensity}";
+		lblScreenWidth.Text = $"{App.ScreenWidth}, {App.ScreenWidthDp}, {App.ScreenDensity}, SD: {App.ScaledDensity}";
 		Console.WriteLine($"H: {App.ScreenHeight} x W: {App.ScreenWidth}");
     }
 }

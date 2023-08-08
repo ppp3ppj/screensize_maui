@@ -15,6 +15,7 @@ public class MainActivity : MauiAppCompatActivity
         App.ScreenWidth = (int)(Resources.DisplayMetrics.WidthPixels / Resources.DisplayMetrics.Density);
         App.ScreenHeightDp = (int)(Resources.DisplayMetrics.HeightPixels);
         App.ScreenWidthDp = (int)(Resources.DisplayMetrics.WidthPixels);
-        App.ScreenDensity = (int)(Resources.DisplayMetrics.Density);
+        App.ScreenDensity = Resources.DisplayMetrics.Density;
+        App.ScaledDensity = Resources.DisplayMetrics.ScaledDensity;
     }
 }
